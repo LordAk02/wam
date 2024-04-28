@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect to WhatsApp</title>
+    <script>
+        function redirectToWhatsApp() {
+            var phoneNumber = '08143401771'; // Replace with your WhatsApp number
+            var message = 'Hello! i am testing my redirection skills'; // Optional: Replace with your message
+            var url = 'https://wa.me/' + phoneNumber + '?text=' + encodeURIComponent(message);
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+    <h1>Click the button below to open WhatsApp</h1>
+    <button onclick="redirectToWhatsApp()">Open WhatsApp</button>
+</body>
+</html>
